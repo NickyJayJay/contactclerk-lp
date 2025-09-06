@@ -236,4 +236,24 @@ header > .collapsible-header {
     .header-links {
         color: rgb(255, 255, 255);
     }
+
+    #weAnswerForYou,
+    #youStayInformed {
+        flex-direction: column-reverse;
+    }
+
+    .footer-col:last-child {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-col:first-child {
+        width: 320px;
+        text-align: left;
+    }
+
+    .footer-col:last-child {
+        text-align: right;
+    }
 }
