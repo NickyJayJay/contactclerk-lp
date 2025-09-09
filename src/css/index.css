@@ -212,6 +212,11 @@ header > .collapsible-header {
     /* background-color: #dedddd; */
 }
 
+#mainHeadline {
+    padding-top: 80px;
+    line-height: 1.25;
+}
+
 @media not all and (min-width: 1024px) {
     header .collapsible-header {
         position: fixed;
