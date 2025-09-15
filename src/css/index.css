@@ -262,3 +262,231 @@ header > .collapsible-header {
         text-align: right;
     }
 }
+
+/* Custom Tailwind prefixed styles */
+.tw-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.tw-block {
+    display: block;
+}
+.tw-w-full {
+    width: 100%;
+}
+.tw-mb-3 {
+    margin-bottom: 0.75rem;
+}
+.tw-mb-4 {
+    margin-bottom: 1rem;
+}
+.tw-mb-6 {
+    margin-bottom: 1.5rem;
+}
+.tw-px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+.tw-py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.tw-px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.tw-py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+.tw-border {
+    border-width: 1px;
+}
+.tw-border-gray-300 {
+    border-color: #d1d5db;
+}
+.tw-rounded {
+    border-radius: 0.25rem;
+}
+.tw-text-gray-700 {
+    color: #374151;
+}
+.tw-text-red-500 {
+    color: #ef4444;
+}
+.tw-text-white {
+    color: #ffffff;
+}
+.tw-text-green-700 {
+    color: #15803d;
+}
+.tw-text-red-700 {
+    color: #b91c1c;
+}
+.tw-text-sm {
+    font-size: 0.875rem;
+}
+.tw-font-medium {
+    font-weight: 500;
+}
+.tw-font-bold {
+    font-weight: 700;
+}
+.tw-bg-blue-600 {
+    background-color: #2563eb;
+}
+.tw-bg-green-50 {
+    background-color: #f0fdf4;
+}
+.tw-bg-red-50 {
+    background-color: #fef2f2;
+}
+.tw-border-green-200 {
+    border-color: #bbf7d0;
+}
+.tw-border-red-200 {
+    border-color: #fecaca;
+}
+.tw-focus\:outline-none:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+.tw-focus\:ring-2:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+.tw-focus\:border-blue-500:focus {
+    border-color: #3b82f6;
+}
+.tw-hover\:bg-blue-700:hover {
+    background-color: #1d4ed8;
+}
+.tw-transition {
+    transition-property: color, background-color, border-color,
+        text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+        filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+.tw-duration-200 {
+    transition-duration: 200ms;
+}
+.tw-disabled\:opacity-50:disabled {
+    opacity: 0.5;
+}
+.tw-disabled\:cursor-not-allowed:disabled {
+    cursor: not-allowed;
+}
+.tw-flex {
+    display: flex;
+}
+.tw-items-center {
+    align-items: center;
+}
+.tw-justify-center {
+    justify-content: center;
+}
+.tw-space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 0.5rem;
+}
+.tw-hidden {
+    display: none;
+}
+.tw-grid {
+    display: grid;
+}
+.tw-gap-4 {
+    gap: 1rem;
+}
+.tw-grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.tw-resize-none {
+    resize: none;
+}
+.tw-min-h-24 {
+    min-height: 6rem;
+}
+.tw-p-4 {
+    padding: 1rem;
+}
+.tw-text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.tw-text-blue-900 {
+    color: #1e3a8a;
+}
+
+/* Responsive grid */
+@media (min-width: 768px) {
+    .tw-md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .contact-us {
+        margin: 75px 0;
+    }
+}
+
+/* Loading spinner */
+.tw-animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.tw-h-4 {
+    height: 1rem;
+}
+.tw-w-4 {
+    width: 1rem;
+}
+.tw-border-2 {
+    border-width: 2px;
+}
+.tw-border-blue-600 {
+    border-color: #2563eb;
+}
+.tw-border-t-transparent {
+    border-top-color: transparent;
+}
+.tw-rounded-full {
+    border-radius: 9999px;
+}
+.contact-us h2 {
+    margin-bottom: 25px;
+}
+.contact-us .reveal-up {
+    max-width: 700px;
+    width: 100%;
+}
+#contact-form {
+    margin: 0 auto;
+    color: black;
+}
+#contact-form label {
+    color: white;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+.alert-danger {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
