@@ -11,6 +11,17 @@ $(document).ready(function () {
         $loadingIndicator.show();
         $messagesDiv.hide();
 
+        // Get Turnstile token
+        const turnstileToken = $('[name="cf-turnstile-response"]').val();
+
+        // Check if Turnstile was completed
+        if (!turnstileToken) {
+            showMessage('Please complete the security verification.', 'error');
+            $submitBtn.prop('disabled', false);
+            $loadingIndicator.hide();
+            return;
+        }
+
         // Get form data
         const data = {
             name: $('#name').val(),
@@ -18,7 +29,8 @@ $(document).ready(function () {
             website: $('#website').val(),
             phone: $('#phone').val(),
             message: $('#message').val(),
-            referrer: $('#referrer').val()
+            referrer: $('#referrer').val(),
+            'cf-turnstile-response': turnstileToken
         };
 
         // Make API request to your Django backend
